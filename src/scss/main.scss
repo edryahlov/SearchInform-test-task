@@ -1,0 +1,20 @@
+img {
+    border-radius: 5%;
+}
+
+.dropzone {
+    cursor: pointer;
+}
+
+//========================
+// PHONE FIXES - ex-XS & SM
+//========================
+@media (min-width: 320px) and (max-width: 580px) {
+    .xs-center {
+        text-align: center;
+    }
+    ul {
+        display: inline-block;
+        padding: 0;
+    }
+}
