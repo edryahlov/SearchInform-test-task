@@ -8,7 +8,7 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 
 $file = pathinfo($_FILES['file']['name']);
 parse_str($_SERVER['QUERY_STRING'], $query);
-$uploaddir = '/var/www/u0393962/data/www/egenius.rocks/sites/searchinform/api/pics/';
+$uploaddir = $_SERVER['DOCUMENT_ROOT'].'/sites/searchinform/api/pics/';
 // $uploadfile = $uploaddir . basename($_FILES['file']['name']);
 $uploadfile = $uploaddir . basename($query['id'].'.'.$file['extension']);
 
